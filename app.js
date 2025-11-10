@@ -6,7 +6,7 @@ const searchResult =document.querySelector(".result");
 async function movieBox() {
     const apiKey ="a3b12933";
     const movieName = searchInput.value;
-    let res= await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}`);
+    let res= await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}`);
     let data = await res.json();
     console.log(data);
 
